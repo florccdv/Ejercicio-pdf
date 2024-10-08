@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportar a PDF</title>
+    <style>
+        body{
+            height: 100vh;
+            position: relative;
+        }
+             
+        @media print {
+            .header {
+                position: fixed;
+                right: 0;
+                top: 0;
+                height: 30px;               
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                height: 30px;
+            }
+        }
+
+        @page {
+            size: A4 portrait;
+            margin: 2cm 2cm 2cm 2cm;
+        }
+
+      
+       
+        .titulo {
+            width: 90%;
+            margin-top: 250px;
+            text-align: center;
+            font-size: 50pt;    
+        }
+        .subtitulo{
+            width: 90%;
+            height: 30px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 25pt;
+        }
+
+        h1 {
+            page-break-before: always;
+            page-break-after: avoid;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            page-break-inside: avoid;
+        }
+
+        table{
+            width: 450px;
+            height: 300px;
+            margin: auto;
+            margin-top: 20px;            
+        }
+
+        tr, th{
+            padding: 10px;
+            margin: auto;
+            align-items: center;
+        }
+
+        img{
+            width: 90%;
+            margin: auto;
+        }
+
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="titulo"> Título <br> del trabajo </div>
+    <p class="subtitulo">En esta página no va a haber nada más que lo que hay</p>
+    <div class="footer">María de Jesús Sagrado</div>
+
+    <div class="contenido">
+        <div class="header">Trabajo pdf</div>
+        <h1>Resumen</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+
+        <h1>Introducción</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+
+        <h1>Contenido</h1><br>
+
+        <h2>Descripción</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p><br>
+
+        <h2>Análisis General</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p><br><br>
+
+            <table border="2">
+                <tr><th>Valor1</th> <th>Valor2</th> <th>Valor3</th> <th>Valor4</th> <th>Valor5</th></tr>
+                <tr><td>zzzzzz</td> <td>dddddd</td> <td>cccccccc</td> <td>bbbbbbb</td> <td>zzzzzzz</td></tr>
+                <tr><td>xxxxxxx</td> <td>aaaaaaaa</td> <td>fffffff</td> <td>gggg</td> <td>nnnnnn</td></tr>
+                <tr><td>wwwww</td> <td>ppppppp</td> <td>tttttt</td> <td>vvvvvvv</td> <td>yyyyyyy</td></tr>
+                <tr><td>uuuuuu</td> <td>ssssssss</td> <td>kkkkkkk</td> <td>llllllll</td> <td>ffffff</td></tr>
+                <tr><td>qqqqqqq</td> <td>mmmmmm</td> <td>eeeeeee</td> <td>ñññññññ</td> <td>ggggggg</td></tr>
+                <tr><td>jjjjjjjj</td> <td>jjj</td> <td>rrrrrrr</td> <td>hhhhhh</td> <td>vvvvvv</td></tr>
+                
+            </table><br>
+
+        <h2>Actualización</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+
+        <h1>Discusión</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>´
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_LamuyiCFUkuyLKD0mDiNDYGHuPQMbNXqA&s" alt="">
+
+        <h1>Conclusiones</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati assumenda adipisci facere aperiam
+            dicta similique fugiat aspernatur, nulla quae debitis? Harum, distinctio rerum? Natus ipsum quam optio
+            magnam temporibus.</p>
+    </div>
+
+    
+
+</body>
+
+</html>
